@@ -31,7 +31,7 @@ def get_data_files(*dirs):
 
 setup(
     name='chiki-mongoengine',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/endsh/chiki-mongoengine',
     author='Linshao',
     author_email='438985635@qq.com',

@@ -33,6 +33,11 @@ class MongoEngine(mongoengine.MongoEngine):
         self.Document = Document
         self.DynamicDocument = DynamicDocument
 
+    def init_app(self, app):
+        super(MongoEngine, self).init_app(app)
+        if not hasattr(app, 'db'):
+            app.db = self
+
     def choices(self, **kwargs):
         return Chocies(**kwargs)
 
